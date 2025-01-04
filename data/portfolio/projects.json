@@ -1,10 +1,10 @@
 [
   {
-    "name": "huynhviet.com",
+    "name": "vietthe.dev",
     "description": "This personal website",
     "stack": ["TypeScript", "Preact", "Tailwind", "Fresh", "Deno"],
     "role": "Author",
-    "url": "https://github.com/hlqviet/huynhviet.com"
+    "url": "https://github.com/hlqviet/vietthe.dev"
   },
   {
     "name": "Cloudflare Gateway Pihole Scripts",
