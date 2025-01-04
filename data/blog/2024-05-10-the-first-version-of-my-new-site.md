@@ -9,7 +9,7 @@ private: false
 
 As a developer, it's a good idea to have something to showcase what I can do and
 what I've done. I did it before by creating a
-[portfolio](https://github.com/hlqviet/next-portfolio), but there were a few
+[portfolio](https://github.com/vietthedev/next-portfolio), but there were a few
 problems. Firstly, it was created while I was still learning React so I chose a
 different set of tools without considering the type of the site. Secondly, I
 didn't bother updating it so it became ancient, both in terms of content and

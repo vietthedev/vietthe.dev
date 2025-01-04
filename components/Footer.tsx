@@ -25,15 +25,15 @@ const menus: {
     title: "Links",
     children: [
       {
-        name: "hlqviet",
-        href: "https://github.com/hlqviet",
+        name: "vietthedev",
+        href: "https://github.com/vietthedev",
         icon: <IconBrandGithub />,
         openNewTab: true,
         title: "GitHub",
       },
       {
-        name: "viet-huynh",
-        href: "https://www.linkedin.com/in/viet-huynh",
+        name: "vietthedev",
+        href: "https://www.linkedin.com/in/vietthedev",
         icon: <IconBrandLinkedin />,
         openNewTab: true,
         title: "LinkedIn",

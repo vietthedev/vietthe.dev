@@ -90,7 +90,7 @@ const About = (props: PageProps) => {
             <Link href="https://flic.kr/ps/ApMou" target="_blank">Flickr</Link>
             {" "}
             or{" "}
-            <Link href="https://instagr.am/hlqviet/" target="_blank">
+            <Link href="https://instagr.am/vietthedev/" target="_blank">
               Instagram
             </Link>.
           </p>
@@ -130,21 +130,21 @@ const About = (props: PageProps) => {
             <li>
               Facebook:{" "}
               <Link
-                href="https://fb.com/hlqviet/"
+                href="https://fb.com/vietthedev/"
                 target="_blank"
                 title="Facebook"
               >
-                fb.com/hlqviet
+                fb.com/vietthedev
               </Link>
             </li>
             <li>
               Instagram:{" "}
               <Link
-                href="https://instagr.am/hlqviet/"
+                href="https://instagr.am/vietthedev/"
                 target="_blank"
                 title="Instagram"
               >
-                instagr.am/hlqviet
+                instagr.am/vietthedev
               </Link>
             </li>
             <li>
@@ -170,11 +170,11 @@ const About = (props: PageProps) => {
             <li>
               Telegram:{" "}
               <Link
-                href="https://t.me/hlqviet"
+                href="https://t.me/vietthedev"
                 target="_blank"
                 title="Telegram"
               >
-                t.me/hlqviet
+                t.me/vietthedev
               </Link>
             </li>
           </ul>

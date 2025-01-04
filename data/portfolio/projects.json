@@ -4,7 +4,7 @@
     "description": "This personal website",
     "stack": ["TypeScript", "Preact", "Tailwind", "Fresh", "Deno"],
     "role": "Author",
-    "url": "https://github.com/hlqviet/vietthe.dev"
+    "url": "https://github.com/vietthedev/vietthe.dev"
   },
   {
     "name": "Cloudflare Gateway Pihole Scripts",
@@ -18,14 +18,14 @@
     "description": "The old portfolio",
     "stack": ["TypeScript", "React", "Next.js", "Node.js"],
     "role": "Author",
-    "url": "https://github.com/hlqviet/next-portfolio"
+    "url": "https://github.com/vietthedev/next-portfolio"
   },
   {
     "name": "VTV Giai Tri Grabber",
     "description": "Get video urls from the VTV Giai tri streaming service",
     "stack": ["JavaScript", "React", "Node.js"],
     "role": "Author",
-    "url": "https://github.com/hlqviet/vtv-giai-tri-grabber"
+    "url": "https://github.com/vietthedev/vtv-giai-tri-grabber"
   },
   {
     "name": "Docker-Py-Revanced",

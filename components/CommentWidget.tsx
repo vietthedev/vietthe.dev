@@ -1,7 +1,7 @@
 const CommentWidget = () => (
   <script
     src="https://giscus.app/client.js"
-    data-repo="hlqviet/vietthe.dev"
+    data-repo="vietthedev/vietthe.dev"
     data-repo-id="R_kgDOKt9fdw"
     data-category="Comments"
     data-category-id="DIC_kwDOKt9fd84CeL-i"

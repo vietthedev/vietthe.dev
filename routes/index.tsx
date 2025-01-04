@@ -121,10 +121,10 @@ const Home = (props: PageProps) => {
               <Link
                 class="flex gap-2"
                 title="LinkedIn"
-                href="https://www.linkedin.com/in/viet-huynh"
+                href="https://www.linkedin.com/in/vietthedev"
                 target="_blank"
               >
-                <IconBrandLinkedin /> linkedin.com/in/viet-huynh
+                <IconBrandLinkedin /> linkedin.com/in/vietthedev
               </Link>
             </List.Item>
             <List.Item class="!ml-0">
