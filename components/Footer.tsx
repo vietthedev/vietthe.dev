@@ -51,7 +51,10 @@ const Footer = () => {
             <Title>{item.title}</Title>
             <List class="list-none">
               {item.children.map((child) => (
-                <List.Item class="first:!mt-0 !ml-0" key={child.name}>
+                <List.Item
+                  class="first:!mt-0 !ml-0"
+                  key={`${child.name}-${child.href}`}
+                >
                   <Link
                     href={child.href}
                     title={child.title}
