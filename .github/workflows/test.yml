@@ -21,7 +21,7 @@ jobs:
       - name: Install Deno
         uses: denoland/setup-deno@v2
         with:
-          deno-version: 2.6.0
+          deno-version: 2.6.2
 
       - name: Test step
         run: "deno task test"
