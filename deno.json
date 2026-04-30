@@ -22,7 +22,7 @@
     "@std/path": "jsr:@std/path@1.1.4",
     "@std/testing": "jsr:@std/testing@1.0.18",
     "@tailwindcss/typography": "npm:/@tailwindcss/typography@0.5.15",
-    "daisyui": "npm:daisyui@4.12.24",
+    "daisyui": "npm:daisyui@5.5.19",
     "preact": "https://esm.sh/preact@10.24.3",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.5.11",
     "preact/": "https://esm.sh/preact@10.24.3/",
