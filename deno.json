@@ -20,7 +20,7 @@
     "@std/dotenv": "jsr:@std/dotenv@0.225.7",
     "@std/front-matter": "jsr:@std/front-matter@1.0.9",
     "@std/path": "jsr:@std/path@1.1.5",
-    "@std/testing": "jsr:@std/testing@1.0.18",
+    "@std/testing": "jsr:@std/testing@1.0.19",
     "@tailwindcss/typography": "npm:/@tailwindcss/typography@0.5.15",
     "daisyui": "npm:daisyui@4.12.24",
     "preact": "https://esm.sh/preact@10.24.3",
