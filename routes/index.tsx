@@ -88,14 +88,14 @@ const Home = (props: PageProps) => {
           {projects.map(({ name, description, stack, role, url }) => (
             <Link
               key={name}
-              class="hover:!no-underline"
+              class="hover:no-underline!"
               title={name}
               href={url}
               target="_blank"
             >
               <Card class="flex flex-col h-full justify-between gap-3">
-                <Subtitle class="!mb-0">{name}</Subtitle>
-                <Paragraph class="!my-0">{description}</Paragraph>
+                <Subtitle class="mb-0!">{name}</Subtitle>
+                <Paragraph class="my-0!">{description}</Paragraph>
                 <div class="flex flex-wrap gap-2">
                   {stack.map((item) => <Tag key={item}>{item}</Tag>)}
                 </div>
@@ -108,7 +108,7 @@ const Home = (props: PageProps) => {
         <Title>Contact</Title>
         <section class="w-full flex flex-col md:flex-row justify-center">
           <List class="list-none">
-            <List.Item class="!ml-0">
+            <List.Item class="ml-0!">
               <Link
                 class="flex gap-2"
                 title="Email"
@@ -117,7 +117,7 @@ const Home = (props: PageProps) => {
                 <IconMail /> contact@vietthe.dev
               </Link>
             </List.Item>
-            <List.Item class="!ml-0">
+            <List.Item class="ml-0!">
               <Link
                 class="flex gap-2"
                 title="LinkedIn"
@@ -127,7 +127,7 @@ const Home = (props: PageProps) => {
                 <IconBrandLinkedin /> linkedin.com/in/vietthedev
               </Link>
             </List.Item>
-            <List.Item class="!ml-0">
+            <List.Item class="ml-0!">
               <Link
                 class="flex gap-2"
                 title="In-person"

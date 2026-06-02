@@ -28,7 +28,7 @@ const Header = () => {
         </Hamburger>
         <List class="hidden md:flex items-center gap-6 list-none" role="menu">
           {NAV_ITEMS.map((item) => (
-            <List.Item key={item.name} class="!ml-0 !mt-0" role="menuitem">
+            <List.Item key={item.name} class="ml-0! mt-0!" role="menuitem">
               <Link
                 href={item.href}
                 class={`py-1 aria-[current='page']:active-link ${
