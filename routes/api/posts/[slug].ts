@@ -1,6 +1,6 @@
-import { Handler } from "$fresh/server.ts";
 import { Post } from "@/lib/types.ts";
 import { getPost } from "@/lib/utils.ts";
+import { Handler } from "fresh/compat";
 
 export const handler: Handler<Post> = async (_req, ctx) => {
   const post = await getPost(ctx.params.slug);
