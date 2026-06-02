@@ -1,5 +1,5 @@
-import { Head } from "$fresh/runtime.ts";
-import { Handler, PageProps } from "$fresh/server.ts";
+import { Head } from "fresh/runtime";
+import { PageProps } from "fresh";
 import { render } from "@deno/gfm";
 
 import CommentWidget from "@/components/CommentWidget.tsx";
@@ -9,6 +9,7 @@ import Metadata from "@/components/Metadata.tsx";
 import { Post } from "@/lib/types.ts";
 import { formatPostDate } from "@/lib/utils.ts";
 import { handler as getPost } from "@/routes/api/posts/[slug].ts";
+import { Handler } from "fresh/compat";
 
 export const handler: Handler<Post> = async (req, ctx) => {
   const response = await getPost(req, ctx);

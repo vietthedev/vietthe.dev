@@ -1,5 +1,5 @@
-import { Head } from "$fresh/runtime.ts";
-import { PageProps } from "$fresh/server.ts";
+import { Head } from "fresh/runtime";
+import { PageProps } from "fresh";
 import Container from "@/components/Container.tsx";
 import Link from "@/components/Link.tsx";
 import Metadata from "@/components/Metadata.tsx";

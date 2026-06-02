@@ -1,10 +1,11 @@
-import { Head } from "$fresh/runtime.ts";
-import { Handler, PageProps } from "$fresh/server.ts";
+import { Head } from "fresh/runtime";
+import { PageProps } from "fresh";
 import { handler as getPosts } from "@/routes/api/posts/index.ts";
 import Container from "@/components/Container.tsx";
 import { Post } from "@/lib/types.ts";
 import PostCard from "@/components/PostCard.tsx";
 import Metadata from "@/components/Metadata.tsx";
+import { Handler } from "fresh/compat";
 
 export const handler: Handler<Post[]> = async (req, ctx) => {
   const response = await getPosts(req, ctx);
