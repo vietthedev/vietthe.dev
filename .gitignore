@@ -8,5 +8,8 @@
 # Fresh build directory
 _fresh/
 
+# Wrangler
+.wrangler
+
 # npm module directory
 node_modules/

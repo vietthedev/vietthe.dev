@@ -2,9 +2,9 @@ name: Deploy
 
 on:
   push:
-    branches: main
+    branches: ["main"]
   pull_request:
-    branches: main
+    branches: ["main"]
 
 jobs:
   test:
@@ -33,11 +33,9 @@ jobs:
         run: "deno task build"
 
       - name: Upload to Deno Deploy
-        uses: denoland/deployctl@7bded90d0d09cd99bbfb513966146315db97618b # 1.13.1
+        uses: cloudflare/wrangler-action@v4
         with:
-          project: "vietthedev"
-          entrypoint: "main.ts"
-          root: ""
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
   purge-cache:
     needs: deploy
