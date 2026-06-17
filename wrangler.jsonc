@@ -6,7 +6,7 @@
     "nodejs_compat"
   ],
   "build": {
-    "command": "npx deno install && npx deno task build"
+    "command": "deno install && deno task build"
   },
   "assets": {
     "directory": "_fresh/client"

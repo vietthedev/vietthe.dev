@@ -29,10 +29,7 @@ jobs:
         with:
           deno-version: 2.8.3
 
-      - name: Build step
-        run: "deno task build"
-
-      - name: Upload to Deno Deploy
+      - name: Deploy
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
