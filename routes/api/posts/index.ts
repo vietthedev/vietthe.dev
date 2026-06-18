@@ -1,11 +1,12 @@
-import { Post } from "@/lib/types.ts";
 import { getPosts } from "@/lib/utils.ts";
-import { Handler } from "fresh/compat";
+import { define } from "@/utils.ts";
 
-export const handler: Handler<Post[]> = async () => {
-  const posts = await getPosts();
+export const handler = define.handlers({
+  async GET() {
+    const posts = await getPosts();
 
-  return new Response(JSON.stringify(posts), {
-    headers: { "Content-Type": "application/json" },
-  });
-};
+    return new Response(JSON.stringify(posts), {
+      headers: { "Content-Type": "application/json" },
+    });
+  },
+});

@@ -1,3 +1,4 @@
+import { STATUS_CODE } from "@std/http/status";
 import { HttpError, PageProps } from "fresh";
 
 const ErrorPage = (props: PageProps) => {
@@ -6,12 +7,12 @@ const ErrorPage = (props: PageProps) => {
     const status = error.status; // HTTP status code
 
     // Render a 404 not found page
-    if (status === 404) {
-      return <h1>404 - Page not found</h1>;
+    if (status === STATUS_CODE.NotFound) {
+      return <h1>What you're looking for isn't here :(</h1>;
     }
   }
 
-  return <h1>Oh no...</h1>;
+  return <h1>Oh no. Something went wrong.</h1>;
 };
 
 export default ErrorPage;

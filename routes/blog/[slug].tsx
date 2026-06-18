@@ -1,27 +1,31 @@
-import { Head } from "fresh/runtime";
-import { PageProps } from "fresh";
 import { render } from "@deno/gfm";
+import { STATUS_CODE } from "@std/http/status";
+import { HttpError, page } from "fresh";
+import { Head } from "fresh/runtime";
 
 import CommentWidget from "@/components/CommentWidget.tsx";
 import Container from "@/components/Container.tsx";
 import Link from "@/components/Link.tsx";
 import Metadata from "@/components/Metadata.tsx";
-import { Post } from "@/lib/types.ts";
 import { formatPostDate } from "@/lib/utils.ts";
-import { handler as getPost } from "@/routes/api/posts/[slug].ts";
-import { Handler } from "fresh/compat";
+import { define } from "@/utils.ts";
 
-export const handler: Handler<Post> = async (req, ctx) => {
-  const response = await getPost(req, ctx);
+export const handler = define.handlers({
+  async GET(ctx) {
+    const url = new URL(`/api/posts/${ctx.params.slug}`, ctx.url);
+    const response = await fetch(url);
 
-  if (!response.ok) return ctx.renderNotFound();
+    if (!response.ok && response.status === STATUS_CODE.NotFound) {
+      throw new HttpError(response.status);
+    }
 
-  const post = await response.json();
+    const post = await response.json();
 
-  return ctx.render(post);
-};
+    return page(post);
+  },
+});
 
-const PostPage = (props: PageProps<Post>) => {
+export default define.page<typeof handler>((props) => {
   const { data, url } = props;
   const { content, excerpt, publishedAt, title } = data;
 
@@ -66,6 +70,4 @@ const PostPage = (props: PageProps<Post>) => {
       </article>
     </Container>
   );
-};
-
-export default PostPage;
+});

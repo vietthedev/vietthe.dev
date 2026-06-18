@@ -1,20 +1,22 @@
+import { page } from "fresh";
 import { Head } from "fresh/runtime";
-import { PageProps } from "fresh";
-import { handler as getPosts } from "@/routes/api/posts/index.ts";
+
 import Container from "@/components/Container.tsx";
-import { Post } from "@/lib/types.ts";
-import PostCard from "@/components/PostCard.tsx";
 import Metadata from "@/components/Metadata.tsx";
-import { Handler } from "fresh/compat";
+import PostCard from "@/components/PostCard.tsx";
+import { define } from "@/utils.ts";
 
-export const handler: Handler<Post[]> = async (req, ctx) => {
-  const response = await getPosts(req, ctx);
-  const posts = await response.json();
+export const handler = define.handlers({
+  async GET(ctx) {
+    const url = new URL("/api/posts", ctx.url);
+    const response = await fetch(url);
+    const posts = await response.json();
 
-  return ctx.render(posts);
-};
+    return page(posts);
+  },
+});
 
-const Blog = (props: PageProps<Post[]>) => {
+export default define.page<typeof handler>((props) => {
   const { data, url } = props;
 
   return (
@@ -34,10 +36,8 @@ const Blog = (props: PageProps<Post[]>) => {
         <title>Việt Huỳnh - Blog</title>
       </Head>
       <section class="flex flex-col gap-y-16 [&>article:not(:last-child)]:border-b">
-        {data.map((post) => <PostCard {...post} />)}
+        {data.map((post) => <PostCard key={post.title} {...post} />)}
       </section>
     </Container>
   );
-};
-
-export default Blog;
+});
