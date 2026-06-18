@@ -1,4 +1,4 @@
-import { App, csp, staticFiles, trailingSlashes } from "fresh";
+import { App, cors, csp, staticFiles, trailingSlashes } from "fresh";
 
 import { State } from "@/utils.ts";
 
@@ -12,6 +12,7 @@ export const app = new App<State>()
       "style-src 'self' 'unsafe-inline' giscus.app",
     ],
   }))
+  .use(cors())
   .use(staticFiles())
   .use(trailingSlashes("never"))
   .fsRoutes();
