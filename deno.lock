@@ -76,7 +76,7 @@
     "npm:tailwindcss@4.3.0": "4.3.0",
     "npm:vite@8.0.16": "8.0.16_@types+node@24.2.0_esbuild@0.25.12",
     "npm:vite@^7.1.4": "7.3.5_@types+node@24.2.0",
-    "npm:wrangler@^4.101.0": "4.101.0"
+    "npm:wrangler@4.101.0": "4.101.0"
   },
   "jsr": {
     "@deno/esbuild-plugin@1.2.1": {
@@ -2066,8 +2066,8 @@
       "integrity": "sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==",
       "bin": true
     },
-    "semver@7.8.1": {
-      "integrity": "sha512-rkVq3IXh+4FDGch+KwzX3aV9W3kO54GyEgpvBzSyctDA6Xtd7RJQV1xmXbeQp5v7+VzLOfVqiutSE6GICgPFvg==",
+    "semver@7.8.4": {
+      "integrity": "sha512-rUCObTnP32Q08R2uuIrt7r9PlEonuTmtuXYcW6s5kjdlj3xbnwe+21yXptAUYcMAABLkYYTtnmzb3w3EDZfueA==",
       "bin": true
     },
     "sharp@0.34.5": {
@@ -2075,7 +2075,7 @@
       "dependencies": [
         "@img/colour",
         "detect-libc",
-        "semver@7.8.1"
+        "semver@7.8.4"
       ],
       "optionalDependencies": [
         "@img/sharp-darwin-arm64",
@@ -2260,7 +2260,7 @@
       "npm:preact@10.29.1",
       "npm:tailwindcss@4.3.0",
       "npm:vite@8.0.16",
-      "npm:wrangler@^4.101.0"
+      "npm:wrangler@4.101.0"
     ]
   }
 }
