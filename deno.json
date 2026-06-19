@@ -4,7 +4,7 @@
     "start": "vite",
     "build": "vite build",
     "preview": "deno serve -allow-all _fresh/server.js",
-    "update": "deno run --allow-all --reload https://fresh.deno.dev/update .",
+    "update": "deno run --allow-all --reload https://usefresh.dev/update .",
     "test": "deno test --allow-read"
   },
   "lint": { "rules": { "tags": ["fresh", "recommended"] } },

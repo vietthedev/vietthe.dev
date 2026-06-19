@@ -76,16 +76,16 @@ const Footer = () => {
         ))}
       </div>
       <div class="mt-4 flex flex-col items-end gap-3">
-        <Link href="https://fresh.deno.dev" target="_blank">
+        <Link href="https://usefresh.dev" target="_blank">
           <picture>
             <source
-              srcset="https://fresh.deno.dev/fresh-badge-dark.svg"
+              srcset="https://usefresh.dev/fresh-badge-dark.svg"
               media="(prefers-color-scheme: dark)"
             />
             <img
               width="197"
               height="37"
-              src="https://fresh.deno.dev/fresh-badge.svg"
+              src="https://usefresh.dev/fresh-badge.svg"
               alt="Made with Fresh"
             />
           </picture>
