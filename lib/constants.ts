@@ -1,3 +1,5 @@
+import { exists } from "@std/fs";
+
 export const NAV_ITEMS = [
   {
     name: "Home",
@@ -15,6 +17,6 @@ export const NAV_ITEMS = [
   },
 ];
 
-export const POST_DIRECTORY = Deno.env.get("DENO_ENV") === "production"
-  ? "data/blog"
-  : "_fresh/client/data/blog";
+export const POST_DIRECTORY = await exists("../_fresh", { isDirectory: true })
+  ? "_fresh/client/data/blog"
+  : "data/blog";
