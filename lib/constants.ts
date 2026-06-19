@@ -15,4 +15,4 @@ export const NAV_ITEMS = [
   },
 ];
 
-export const POST_DIRECTORY = "./data/blog";
+export const POST_DIRECTORY = "data/blog";

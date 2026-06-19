@@ -1,14 +1,16 @@
 import { extractYaml } from "@std/front-matter";
-import { join } from "@std/path/posix";
+import { join, resolve } from "@std/path";
 
 import { POST_DIRECTORY } from "@/lib/constants.ts";
 import { Post } from "@/lib/types.ts";
+
+const resolvedPostDirectory = resolve(POST_DIRECTORY);
 
 export const getFiles = (directory: string) =>
   Array.fromAsync(Deno.readDir(directory));
 
 export const getPosts = async (includesPrivate = false): Promise<Post[]> => {
-  const promises = (await getFiles(POST_DIRECTORY)).map((file) =>
+  const promises = (await getFiles(resolvedPostDirectory)).map((file) =>
     getPost(file.name.replace(".md", ""))
   );
   let posts = await Promise.all(promises) as Post[];
@@ -24,7 +26,9 @@ export const getPosts = async (includesPrivate = false): Promise<Post[]> => {
 
 export const getPost = async (slug: string): Promise<Post | null> => {
   try {
-    const text = await Deno.readTextFile(join(POST_DIRECTORY, `${slug}.md`));
+    const text = await Deno.readTextFile(
+      join(resolvedPostDirectory, `${slug}.md`),
+    );
     const { attrs, body } = extractYaml<Post>(text);
 
     return {
