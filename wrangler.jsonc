@@ -1,15 +1,17 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "vietthedev",
+  "assets": {
+    "directory": "_fresh/client"
+  },
+  "build": {
+    "command": "deno install && deno task build"
+  },
   "compatibility_date": "2026-06-17",
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "build": {
-    "command": "deno install && deno task build"
-  },
-  "assets": {
-    "directory": "_fresh/client"
-  },
-  "main": "./server.js"
+  "main": "./server.js",
+  "name": "vietthedev",
+  "preserve_file_names": true,
+  "workers_dev": false
 }
