@@ -12,6 +12,5 @@
   ],
   "main": "./server.js",
   "name": "vietthedev",
-  "preserve_file_names": true,
   "workers_dev": false
 }

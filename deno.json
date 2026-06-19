@@ -33,7 +33,6 @@
     "@tailwindcss/vite": "npm:@tailwindcss/vite@4.3.0",
     "daisyui": "npm:daisyui@5.5.20",
     "preact": "npm:preact@10.29.1",
-    "preact/": "https://esm.sh/preact@10.24.3/",
     "tabler_icons_tsx/": "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/",
     "tailwindcss": "npm:tailwindcss@4.3.0",
     "tailwindcss/": "npm:/tailwindcss@4.3.0/",
