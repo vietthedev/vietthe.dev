@@ -29,6 +29,9 @@ jobs:
         with:
           deno-version: 2.8.3
 
+      - name: Build
+        run: deno task build
+
       - name: Deploy
         uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
         with:
