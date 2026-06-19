@@ -2,7 +2,14 @@
   "tasks": {
     "check": "deno fmt --check . && deno lint . && deno check",
     "dev": "vite",
-    "build": "vite build",
+    "build:web": "vite build",
+    "build:assets": {
+      "command": "cp -r data _fresh/client",
+      "dependencies": ["build:web"]
+    },
+    "build": {
+      "dependencies": ["build:web", "build:assets"]
+    },
     "start": "deno serve --allow-all _fresh/server.js",
     "update": "deno run --allow-all --reload jsr:@fresh/update .",
     "test": "deno test --allow-read"

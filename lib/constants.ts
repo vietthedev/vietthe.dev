@@ -15,4 +15,6 @@ export const NAV_ITEMS = [
   },
 ];
 
-export const POST_DIRECTORY = "data/blog";
+export const POST_DIRECTORY = import.meta.env.DEV
+  ? "data/blog"
+  : "_fresh/client/data/blog";
