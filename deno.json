@@ -1,18 +1,27 @@
 {
   "tasks": {
-    "check": "deno fmt --check && deno lint && deno check",
-    "start": "vite",
+    "check": "deno fmt --check . && deno lint . && deno check",
+    "dev": "vite",
     "build": "vite build",
-    "preview": "deno serve -allow-all _fresh/server.js",
-    "update": "deno run --allow-all --reload https://usefresh.dev/update .",
+    "start": "deno serve -allow-all _fresh/server.js",
+    "update": "deno run --allow-all --reload jsr:@fresh/update .",
     "test": "deno test --allow-read"
   },
-  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
-  "exclude": ["**/_fresh/*"],
+  "lint": {
+    "rules": {
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
+    }
+  },
+  "exclude": [
+    "**/_fresh/*"
+  ],
   "imports": {
     "@/": "./",
     "@deno/gfm": "jsr:@deno/gfm@0.12.0",
-    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.1.2",
+    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@1.1.2",
     "@preact/signals": "npm:@preact/signals@2.9.0",
     "@std/assert": "jsr:@std/assert@1.0.19",
     "@std/dotenv": "jsr:@std/dotenv@0.225.7",
@@ -33,14 +42,34 @@
     "vite": "npm:vite@7.3.5",
     "wrangler": "npm:wrangler@4.102.0"
   },
-  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
-  "nodeModulesDir": "auto",
-  "allowScripts": [
-    "npm:esbuild@0.25.12",
-    "npm:esbuild@0.25.7",
-    "npm:esbuild@0.27.3",
-    "npm:esbuild@0.28.1",
-    "npm:sharp@0.34.5",
-    "npm:workerd@1.20260617.1"
-  ]
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.asynciterable",
+      "dom.iterable",
+      "deno.ns"
+    ],
+    "jsx": "precompile",
+    "jsxImportSource": "preact",
+    "jsxPrecompileSkipElements": [
+      "a",
+      "img",
+      "source",
+      "body",
+      "html",
+      "head",
+      "title",
+      "meta",
+      "script",
+      "link",
+      "style",
+      "base",
+      "noscript",
+      "template"
+    ],
+    "types": [
+      "vite/client"
+    ]
+  },
+  "nodeModulesDir": "auto"
 }
