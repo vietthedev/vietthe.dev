@@ -10,7 +10,7 @@
     "jsr:@fresh/core@2": "2.3.3",
     "jsr:@fresh/core@2.3.3": "2.3.3",
     "jsr:@fresh/core@^2.3.3": "2.3.3",
-    "jsr:@fresh/plugin-vite@^1.1.2": "1.1.2",
+    "jsr:@fresh/plugin-vite@1.1.2": "1.1.2",
     "jsr:@std/assert@1.0.19": "1.0.19",
     "jsr:@std/assert@^1.0.19": "1.0.19",
     "jsr:@std/async@^1.4.0": "1.4.0",
@@ -1766,8 +1766,8 @@
         "domhandler"
       ]
     },
-    "electron-to-chromium@1.5.375": {
-      "integrity": "sha512-ZWP5eB4BVPW/ZYo9252hQZHZ5XavtsTgpbhcmMmRwymavC5AsLWQWBPaKMeNd2LW0KGby5HPXvj7+sr4ta5j/Q=="
+    "electron-to-chromium@1.5.376": {
+      "integrity": "sha512-cUVA7/RvbFTEuw/i3obUwDTRIXojaxkResf+ibByPFxjc6XK3VNtcQXV0NSbAlJ0FMjcJGgftVVB4Qo184EXvA=="
     },
     "enhanced-resolve@5.22.1": {
       "integrity": "sha512-6QEuw3zoX1SJQc7b87aBXke/no+mG2bTBgw29gWMQonLmpEkWoCAVkl+M49e48AZlWzxiDzDZzYdp6kobcyLww==",
@@ -2442,7 +2442,7 @@
     "dependencies": [
       "jsr:@deno/gfm@0.12.0",
       "jsr:@fresh/core@2.3.3",
-      "jsr:@fresh/plugin-vite@^1.1.2",
+      "jsr:@fresh/plugin-vite@1.1.2",
       "jsr:@std/assert@1.0.19",
       "jsr:@std/dotenv@0.225.7",
       "jsr:@std/front-matter@1.0.9",
