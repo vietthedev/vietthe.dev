@@ -15,6 +15,6 @@ export const NAV_ITEMS = [
   },
 ];
 
-export const POST_DIRECTORY = import.meta.env.DEV
+export const POST_DIRECTORY = Deno.env.get("DENO_ENV") === "development"
   ? "data/blog"
   : "_fresh/client/data/blog";
