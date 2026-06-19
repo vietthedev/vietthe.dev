@@ -1,5 +1,7 @@
-import { Head } from "fresh/runtime";
+import { TbBrandLinkedin, TbMail } from "@preact-icons/tb";
 import { PageProps } from "fresh";
+import { Head } from "fresh/runtime";
+
 import Card from "@/components/Card.tsx";
 import Container from "@/components/Container.tsx";
 import Link from "@/components/Link.tsx";
@@ -10,8 +12,6 @@ import Paragraph from "@/components/Typography/Paragraph.tsx";
 import Subtitle from "@/components/Typography/Subtitle.tsx";
 import Text from "@/components/Typography/Text.tsx";
 import Title from "@/components/Typography/Title.tsx";
-import IconBrandLinkedin from "tabler_icons_tsx/brand-linkedin.tsx";
-import IconMail from "tabler_icons_tsx/mail.tsx";
 
 import introduction from "@/data/portfolio/introduction.json" with {
   type: "json",
@@ -114,7 +114,7 @@ const Home = (props: PageProps) => {
                 title="Email"
                 href="mailto:contact@vietthe.dev"
               >
-                <IconMail /> contact@vietthe.dev
+                <TbMail size={24} /> contact@vietthe.dev
               </Link>
             </List.Item>
             <List.Item class="ml-0!">
@@ -124,7 +124,7 @@ const Home = (props: PageProps) => {
                 href="https://www.linkedin.com/in/vietthedev"
                 target="_blank"
               >
-                <IconBrandLinkedin /> linkedin.com/in/vietthedev
+                <TbBrandLinkedin size={24} /> linkedin.com/in/vietthedev
               </Link>
             </List.Item>
             <List.Item class="ml-0!">

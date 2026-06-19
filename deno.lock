@@ -11,6 +11,8 @@
     "jsr:@fresh/core@2.3.3": "2.3.3",
     "jsr:@fresh/core@^2.3.3": "2.3.3",
     "jsr:@fresh/plugin-vite@1.1.2": "1.1.2",
+    "jsr:@preact-icons/common@^1.1.0": "1.1.0",
+    "jsr:@preact-icons/tb@1.0.14": "1.0.14",
     "jsr:@std/assert@1.0.19": "1.0.19",
     "jsr:@std/assert@^1.0.19": "1.0.19",
     "jsr:@std/async@^1.4.0": "1.4.0",
@@ -73,6 +75,7 @@
     "npm:marked@^17.0.1": "17.0.6",
     "npm:preact-render-to-string@^6.6.3": "6.7.0_preact@10.29.1",
     "npm:preact@10.29.1": "10.29.1",
+    "npm:preact@^10.22.1": "10.29.1",
     "npm:preact@^10.28.2": "10.29.1",
     "npm:preact@^10.29.1": "10.29.1",
     "npm:prismjs@^1.30.0": "1.30.0",
@@ -164,6 +167,19 @@
         "npm:@types/babel__core",
         "npm:rollup",
         "npm:vite@^7.1.4"
+      ]
+    },
+    "@preact-icons/common@1.1.0": {
+      "integrity": "ed191a9f88ee0e35539b8de3482d1f8a223b3f14f3b0dbfcba063c70ca4332fc",
+      "dependencies": [
+        "npm:preact@^10.22.1"
+      ]
+    },
+    "@preact-icons/tb@1.0.14": {
+      "integrity": "46e4f3edfdbefc4080714ffb18327a72257696d670d479b1108890345674a6e2",
+      "dependencies": [
+        "jsr:@preact-icons/common",
+        "npm:preact@^10.22.1"
       ]
     },
     "@std/assert@1.0.19": {
@@ -2273,6 +2289,7 @@
       "jsr:@deno/gfm@0.12.0",
       "jsr:@fresh/core@2.3.3",
       "jsr:@fresh/plugin-vite@1.1.2",
+      "jsr:@preact-icons/tb@1.0.14",
       "jsr:@std/assert@1.0.19",
       "jsr:@std/dotenv@0.225.7",
       "jsr:@std/front-matter@1.0.9",

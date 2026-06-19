@@ -1,11 +1,11 @@
+import { TbBrandGithub, TbBrandLinkedin } from "@preact-icons/tb";
+import { VNode } from "preact";
+
 import Link from "@/components/Link.tsx";
 import List from "@/components/List.tsx";
 import Text from "@/components/Typography/Text.tsx";
 import Title from "@/components/Typography/Title.tsx";
 import { NAV_ITEMS } from "@/lib/constants.ts";
-import { VNode } from "preact";
-import IconBrandGithub from "tabler_icons_tsx/brand-github.tsx";
-import IconBrandLinkedin from "tabler_icons_tsx/brand-linkedin.tsx";
 
 const menus: {
   title: string;
@@ -27,14 +27,14 @@ const menus: {
       {
         name: "vietthedev",
         href: "https://github.com/vietthedev",
-        icon: <IconBrandGithub />,
+        icon: <TbBrandGithub size={24} />,
         openNewTab: true,
         title: "GitHub",
       },
       {
         name: "vietthedev",
         href: "https://www.linkedin.com/in/vietthedev",
-        icon: <IconBrandLinkedin />,
+        icon: <TbBrandLinkedin size={24} />,
         openNewTab: true,
         title: "LinkedIn",
       },

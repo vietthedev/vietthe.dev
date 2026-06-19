@@ -1,6 +1,6 @@
-import { JSX } from "preact/jsx-runtime";
+import { AnchorHTMLAttributes } from "preact";
 
-const Link = (props: JSX.HTMLAttributes<HTMLAnchorElement>) => {
+const Link = (props: AnchorHTMLAttributes<HTMLAnchorElement>) => {
   return (
     <a
       {...props}
