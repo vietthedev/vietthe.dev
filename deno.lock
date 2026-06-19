@@ -51,6 +51,7 @@
     "jsr:@std/yaml@^1.0.5": "1.1.1",
     "npm:@babel/core@^7.28.0": "7.29.7",
     "npm:@babel/preset-react@^7.27.1": "7.29.7_@babel+core@7.29.7",
+    "npm:@cloudflare/vite-plugin@1.42.0": "1.42.0_vite@8.0.16__@types+node@24.2.0__esbuild@0.25.12_wrangler@4.102.0_esbuild@0.25.12",
     "npm:@opentelemetry/api@^1.9.0": "1.9.1",
     "npm:@preact/signals@2.9.0": "2.9.0_preact@10.29.1",
     "npm:@preact/signals@^2.5.1": "2.9.0_preact@10.29.1",
@@ -477,6 +478,18 @@
       "optionalPeers": [
         "workerd"
       ]
+    },
+    "@cloudflare/vite-plugin@1.42.0_vite@8.0.16__@types+node@24.2.0__esbuild@0.25.12_wrangler@4.102.0_esbuild@0.25.12": {
+      "integrity": "sha512-U8Bpcn9l10NNCyYo6kMI2RPZhKRWU0i3udrS/+LHHBDSa61Ra6r7OaDY5LnZw86tOC5vZIKRUm5E51MKjOvfwg==",
+      "dependencies": [
+        "@cloudflare/unenv-preset",
+        "miniflare",
+        "unenv",
+        "vite@8.0.16_@types+node@24.2.0_esbuild@0.25.12",
+        "wrangler",
+        "ws"
+      ],
+      "bin": true
     },
     "@cloudflare/workerd-darwin-64@1.20260617.1": {
       "integrity": "sha512-jWwmgEVVWbsHNrLSNXzwjJaH90VzRxq1cWkQFUidxyeUPnMxemeNE8I9qFAfrpzGgE11e9sKDcE3ettJW08swQ==",
@@ -2436,6 +2449,7 @@
       "jsr:@std/http@1.1.1",
       "jsr:@std/path@1.1.5",
       "jsr:@std/testing@1.0.19",
+      "npm:@cloudflare/vite-plugin@1.42.0",
       "npm:@preact/signals@2.9.0",
       "npm:@tailwindcss/typography@0.5.15",
       "npm:@tailwindcss/vite@4.3.0",

@@ -11,6 +11,7 @@
   "exclude": ["**/_fresh/*"],
   "imports": {
     "@/": "./",
+    "@cloudflare/vite-plugin": "npm:@cloudflare/vite-plugin@1.42.0",
     "@deno/gfm": "jsr:@deno/gfm@0.12.0",
     "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.1.2",
     "@preact/signals": "npm:@preact/signals@2.9.0",

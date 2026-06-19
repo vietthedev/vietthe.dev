@@ -1,11 +1,5 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "assets": {
-    "directory": "_fresh/client"
-  },
-  "build": {
-    "command": "deno install && deno task build"
-  },
   "compatibility_date": "2026-06-17",
   "compatibility_flags": [
     "nodejs_compat"
