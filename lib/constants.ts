@@ -1,5 +1,3 @@
-import { exists } from "@std/fs";
-
 export const NAV_ITEMS = [
   {
     name: "Home",
@@ -16,7 +14,3 @@ export const NAV_ITEMS = [
     exact: true,
   },
 ];
-
-export const POST_DIRECTORY = await exists("../_fresh", { isDirectory: true })
-  ? "_fresh/client/data/blog"
-  : "data/blog";
