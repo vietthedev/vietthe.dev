@@ -40,7 +40,7 @@
     "@tailwindcss/typography": "npm:/@tailwindcss/typography@0.5.15",
     "@tailwindcss/vite": "npm:@tailwindcss/vite@4.3.0",
     "daisyui": "npm:daisyui@5.5.23",
-    "preact": "npm:preact@10.29.2",
+    "preact": "npm:preact@10.29.3",
     "tailwindcss": "npm:tailwindcss@4.3.0",
     "tailwindcss/": "npm:/tailwindcss@4.3.0/",
     "tailwindcss/plugin": "npm:/tailwindcss@4.3.0/plugin.js",
