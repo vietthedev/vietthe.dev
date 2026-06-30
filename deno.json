@@ -35,7 +35,7 @@
     "@std/dotenv": "jsr:@std/dotenv@0.225.7",
     "@std/front-matter": "jsr:@std/front-matter@1.0.9",
     "@std/http": "jsr:@std/http@1.1.1",
-    "@std/path": "jsr:@std/path@1.1.5",
+    "@std/path": "jsr:@std/path@1.1.6",
     "@std/testing": "jsr:@std/testing@1.0.19",
     "@tailwindcss/typography": "npm:/@tailwindcss/typography@0.5.15",
     "@tailwindcss/vite": "npm:@tailwindcss/vite@4.3.0",
