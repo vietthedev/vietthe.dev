@@ -12,7 +12,8 @@
     },
     "start": "deno serve --allow-all _fresh/server.js",
     "update": "deno run --allow-all --reload jsr:@fresh/update .",
-    "test": "deno test --allow-read"
+    "test": "deno test --allow-read",
+    "deploy": "deno --allow-env --allow-run npm:wrangler deploy"
   },
   "lint": {
     "rules": {

@@ -24,4 +24,4 @@ jobs:
           deno-version: 2.9.0
 
       - name: Test step
-        run: "deno task test"
+        run: "deno test"

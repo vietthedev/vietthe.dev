@@ -30,10 +30,7 @@ jobs:
           deno-version: 2.9.0
 
       - name: Deploy
-        uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          wranglerVersion: "4.106.0"
+        run: deno task deploy
 
   purge-cache:
     needs: deploy
