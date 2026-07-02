@@ -27,12 +27,13 @@ jobs:
       - name: Install Deno
         uses: denoland/setup-deno@667a34cdef165d8d2b2e98dde39547c9daac7282 # v2.0.4
         with:
+          cache: true
           deno-version: 2.9.0
 
       - name: Deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          WRANGLER_SEND_METRICS: ${{ vars.WRANGLER_SEND_METRICS}}
+          WRANGLER_SEND_METRICS: false
         run: "deno task deploy"
 
   purge-cache:
