@@ -30,7 +30,7 @@ jobs:
           deno-version: 2.9.0
 
       - name: Deploy
-        run: deno task deploy
+        run: "deno task deploy"
 
   purge-cache:
     needs: deploy
