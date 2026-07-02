@@ -30,6 +30,8 @@ jobs:
           deno-version: 2.9.0
 
       - name: Deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: "deno task deploy"
 
   purge-cache:
