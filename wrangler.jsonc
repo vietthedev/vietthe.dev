@@ -1,5 +1,5 @@
 {
-  "$schema": "https://unpkg.com/wrangler@4.107.0/config-schema.json",
+  "$schema": "https://unpkg.com/wrangler@4.106.0/config-schema.json",
   "assets": {
     "directory": "_fresh/client"
   },
