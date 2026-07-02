@@ -4,7 +4,7 @@
     "directory": "_fresh/client"
   },
   "build": {
-    "command": "deno ci && deno task build"
+    "command": "bash ./scripts/deploy.sh"
   },
   "compatibility_date": "2026-07-01",
   "compatibility_flags": [

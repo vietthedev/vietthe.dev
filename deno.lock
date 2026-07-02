@@ -85,6 +85,7 @@
     "npm:tailwindcss@4.3.2": "4.3.2",
     "npm:vite@7.3.6": "7.3.6",
     "npm:vite@^7.1.4": "7.3.6",
+    "npm:wrangler@*": "4.106.0",
     "npm:wrangler@4.106.0": "4.106.0"
   },
   "jsr": {
