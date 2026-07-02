@@ -1,12 +1,12 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
+  "$schema": "https://unpkg.com/wrangler@4.107.0/config-schema.json",
   "assets": {
     "directory": "_fresh/client"
   },
   "build": {
     "command": "deno install --allow-scripts && deno task build"
   },
-  "compatibility_date": "2026-06-17",
+  "compatibility_date": "2026-07-03",
   "compatibility_flags": [
     "nodejs_compat"
   ],
