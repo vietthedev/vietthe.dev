@@ -4,7 +4,7 @@
     "directory": "_fresh/client"
   },
   "build": {
-    "command": "deno install --allow-scripts && deno task build"
+    "command": "deno ci && deno task build"
   },
   "compatibility_date": "2026-07-01",
   "compatibility_flags": [
