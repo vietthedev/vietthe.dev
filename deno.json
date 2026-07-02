@@ -45,7 +45,8 @@
     "tailwindcss/": "npm:/tailwindcss@4.3.0/",
     "tailwindcss/plugin": "npm:/tailwindcss@4.3.0/plugin.js",
     "fresh": "jsr:@fresh/core@2.3.3",
-    "vite": "npm:vite@7.3.6"
+    "vite": "npm:vite@7.3.6",
+    "wrangler": "npm:wrangler@4.106.0"
   },
   "compilerOptions": {
     "lib": [
