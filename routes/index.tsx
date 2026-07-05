@@ -1,4 +1,5 @@
-import { TbBrandLinkedin, TbMail } from "@preact-icons/tb";
+import TbBrandLinkedin from "@preact-icons/tb/TbBrandLinkedin";
+import TbMail from "@preact-icons/tb/TbMail";
 import { PageProps } from "fresh";
 import { Head } from "fresh/runtime";
 
