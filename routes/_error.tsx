@@ -2,11 +2,11 @@ import { STATUS_CODE } from "@std/http/status";
 import { HttpError, PageProps } from "fresh";
 
 const ErrorPage = (props: PageProps) => {
-  const error = props.error; // Contains the thrown Error or HTTPError
-  if (error instanceof HttpError) {
-    const status = error.status; // HTTP status code
+  const { error, params: { debug } } = props;
 
-    // Render a 404 not found page
+  if (error instanceof HttpError) {
+    const status = error.status;
+
     if (status === STATUS_CODE.NotFound) {
       return <h1>What you're looking for isn't here :(</h1>;
     }
@@ -15,8 +15,13 @@ const ErrorPage = (props: PageProps) => {
   return (
     <section>
       <h1>Oh no. Something went wrong.</h1>
-      <p>{(error as Error).message}</p>
-      <p>{(error as Error).stack}</p>
+      {Boolean(debug) && (
+        <ul>
+          <li>Cause: {(error as Error).cause}</li>
+          <li>Message: {(error as Error).message}</li>
+          <li>{(error as Error).stack}</li>
+        </ul>
+      )}
     </section>
   );
 };
