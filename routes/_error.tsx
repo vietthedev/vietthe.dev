@@ -16,6 +16,7 @@ const ErrorPage = (props: PageProps) => {
     <section>
       <h1>Oh no. Something went wrong.</h1>
       <p>{(error as Error).message}</p>
+      <p>{(error as Error).stack}</p>
     </section>
   );
 };
