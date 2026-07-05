@@ -7,19 +7,16 @@ import CommentWidget from "@/components/CommentWidget.tsx";
 import Container from "@/components/Container.tsx";
 import Link from "@/components/Link.tsx";
 import Metadata from "@/components/Metadata.tsx";
-import { formatPostDate } from "@/lib/utils.ts";
+import { formatPostDate, getPost } from "@/lib/utils.ts";
 import { define } from "@/utils.ts";
 
 export const handler = define.handlers({
   async GET(ctx) {
-    const url = new URL(`/api/posts/${ctx.params.slug}`, ctx.url);
-    const response = await fetch(url);
+    const post = await getPost(ctx.params.slug);
 
-    if (!response.ok && response.status === STATUS_CODE.NotFound) {
-      throw new HttpError(response.status);
+    if (!post) {
+      throw new HttpError(STATUS_CODE.NotFound);
     }
-
-    const post = await response.json();
 
     return page(post);
   },

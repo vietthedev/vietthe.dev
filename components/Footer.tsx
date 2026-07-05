@@ -1,4 +1,5 @@
-import { TbBrandGithub, TbBrandLinkedin } from "@preact-icons/tb";
+import TbBrandGithub from "@preact-icons/tb/TbBrandGithub";
+import TbBrandLinkedin from "@preact-icons/tb/TbBrandLinkedin";
 import { VNode } from "preact";
 
 import Link from "@/components/Link.tsx";
