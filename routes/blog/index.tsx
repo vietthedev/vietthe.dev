@@ -1,3 +1,4 @@
+import { STATUS_CODE } from "@std/http/status";
 import { HttpError, page } from "fresh";
 import { Head } from "fresh/runtime";
 
@@ -6,13 +7,20 @@ import Metadata from "@/components/Metadata.tsx";
 import PostCard from "@/components/PostCard.tsx";
 import { Post } from "@/lib/types.ts";
 import { define } from "@/utils.ts";
-import { STATUS_CODE } from "@std/http/status";
 
 export const handler = define.handlers({
   async GET(ctx) {
     try {
       const url = new URL("/api/posts", ctx.url);
       const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new HttpError(
+          STATUS_CODE.InternalServerError,
+          response.statusText,
+        );
+      }
+
       const posts = await response.json() as Post[];
 
       return page(posts);
