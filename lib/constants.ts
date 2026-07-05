@@ -14,3 +14,5 @@ export const NAV_ITEMS = [
     exact: true,
   },
 ];
+
+export const POST_DIRECTORY = "data/blog";
