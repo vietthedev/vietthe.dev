@@ -12,7 +12,12 @@ const ErrorPage = (props: PageProps) => {
     }
   }
 
-  return <h1>Oh no. Something went wrong.</h1>;
+  return (
+    <section>
+      <h1>Oh no. Something went wrong.</h1>
+      <p>{(error as Error).message}</p>
+    </section>
+  );
 };
 
 export default ErrorPage;
