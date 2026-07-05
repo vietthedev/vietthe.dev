@@ -1,18 +1,27 @@
-import { page } from "fresh";
+import { HttpError, page } from "fresh";
 import { Head } from "fresh/runtime";
 
 import Container from "@/components/Container.tsx";
 import Metadata from "@/components/Metadata.tsx";
 import PostCard from "@/components/PostCard.tsx";
+import { Post } from "@/lib/types.ts";
 import { define } from "@/utils.ts";
+import { STATUS_CODE } from "@std/http/status";
 
 export const handler = define.handlers({
   async GET(ctx) {
-    const url = new URL("/api/posts", ctx.url);
-    const response = await fetch(url);
-    const posts = await response.json();
+    try {
+      const url = new URL("/api/posts", ctx.url);
+      const response = await fetch(url);
+      const posts = await response.json() as Post[];
 
-    return page(posts);
+      return page(posts);
+    } catch (error) {
+      throw new HttpError(
+        STATUS_CODE.InternalServerError,
+        (error as Error).message,
+      );
+    }
   },
 });
 
