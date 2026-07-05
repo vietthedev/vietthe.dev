@@ -1,4 +1,4 @@
-name: Deploy
+name: Build
 
 on:
   push:
@@ -11,13 +11,12 @@ jobs:
     name: Test
     uses: ./.github/workflows/test.yml
 
-  deploy:
+  build:
     needs: test
-    name: Deploy
+    name: Build
     runs-on: ubuntu-latest
 
     permissions:
-      id-token: write # Needed for auth with Deno Deploy
       contents: read # Needed to clone the repository
 
     steps:
@@ -30,14 +29,5 @@ jobs:
           cache: true
           deno-version: 2.9.1
 
-      - name: Deploy
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          WRANGLER_SEND_METRICS: false
-        run: "deno task deploy"
-
-  purge-cache:
-    needs: deploy
-    name: Purge cache
-    uses: ./.github/workflows/purge-cache.yml
-    secrets: inherit
+      - name: Build
+        run: "deno task build"

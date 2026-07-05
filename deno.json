@@ -2,18 +2,10 @@
   "tasks": {
     "check": "deno fmt --check . && deno lint . && deno check",
     "dev": "vite",
-    "build:web": "vite build",
-    "build:assets": {
-      "command": "cp -r data _fresh/client",
-      "dependencies": ["build:web"]
-    },
-    "build": {
-      "dependencies": ["build:web", "build:assets"]
-    },
+    "build": "vite build",
     "start": "deno serve --allow-all _fresh/server.js",
     "update": "deno run --allow-all --reload jsr:@fresh/update .",
-    "test": "deno test --allow-read",
-    "deploy": "deno --allow-env --allow-run npm:wrangler deploy"
+    "test": "deno test --allow-read"
   },
   "lint": {
     "rules": {
@@ -46,8 +38,7 @@
     "tailwindcss/": "npm:/tailwindcss@4.3.2/",
     "tailwindcss/plugin": "npm:/tailwindcss@4.3.2/plugin.js",
     "fresh": "jsr:@fresh/core@2.3.3",
-    "vite": "npm:vite@7.3.6",
-    "wrangler": "npm:wrangler@4.106.0"
+    "vite": "npm:vite@7.3.6"
   },
   "compilerOptions": {
     "lib": [
