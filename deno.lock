@@ -63,7 +63,7 @@
     "npm:@tailwindcss/typography@0.5.20": "0.5.20_tailwindcss@4.3.2",
     "npm:@tailwindcss/vite@4.3.2": "4.3.2_vite@7.3.6",
     "npm:@types/babel__core@^7.20.5": "7.20.5",
-    "npm:daisyui@5.6.17": "5.6.17",
+    "npm:daisyui@5.6.18": "5.6.18",
     "npm:esbuild-wasm@~0.25.11": "0.25.12",
     "npm:esbuild@0.25.7": "0.25.7",
     "npm:esbuild@~0.25.5": "0.25.12",
@@ -1234,8 +1234,8 @@
       "integrity": "sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==",
       "bin": true
     },
-    "daisyui@5.6.17": {
-      "integrity": "sha512-e/+8lJc2/GiMrnm6bVL+0K3pYE2mUP4DY/IFUcOCQdcocvRkDsmXGIIaC87JMedJJSKXVCuFpOVSZqMwaRcIGg=="
+    "daisyui@5.6.18": {
+      "integrity": "sha512-6y9rboRQl8fosnusy/5pg11yp+H0LtK3YdtfS4Vf2QVnaYOKasNdYm6hDxeiT6bwZPdl4WRPzVIlIApdo2ssBg=="
     },
     "dayjs@1.11.21": {
       "integrity": "sha512-98IT+HOahAisibz/yjKbzuOBwYcjJ7BCLPzARyHiyEBmRz4fatF+KPJszEHXsGYjUG234aH/cOjW1wwTbKUZlA=="
@@ -1749,7 +1749,7 @@
       "npm:@preact/signals@2.9.3",
       "npm:@tailwindcss/typography@0.5.20",
       "npm:@tailwindcss/vite@4.3.2",
-      "npm:daisyui@5.6.17",
+      "npm:daisyui@5.6.18",
       "npm:preact@10.29.7",
       "npm:tailwindcss@4.3.2",
       "npm:vite@7.3.6"
