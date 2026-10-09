@@ -40,7 +40,7 @@
     "tailwindcss/": "npm:/tailwindcss@4.3.2/",
     "tailwindcss/plugin": "npm:/tailwindcss@4.3.2/plugin.js",
     "fresh": "jsr:@fresh/core@2.3.3",
-    "vite": "npm:vite@7.3.6"
+    "vite": "npm:vite@7.3.7"
   },
   "compilerOptions": {
     "lib": [

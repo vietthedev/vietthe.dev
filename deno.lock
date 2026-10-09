@@ -59,10 +59,10 @@
     "npm:@opentelemetry/api@^1.9.0": "1.9.1",
     "npm:@preact/signals@2.11.3": "2.11.3_preact@10.29.8_preact-render-to-string@6.8.0",
     "npm:@preact/signals@^2.5.1": "2.11.3_preact@10.29.8_preact-render-to-string@6.8.0",
-    "npm:@prefresh/vite@^2.4.8": "2.4.12_preact@10.29.8_vite@7.3.6_preact-render-to-string@6.8.0",
+    "npm:@prefresh/vite@^2.4.8": "2.4.12_preact@10.29.8_vite@7.3.7",
     "npm:@remix-run/node-fetch-server@0.12": "0.12.0",
     "npm:@tailwindcss/typography@0.5.20": "0.5.20_tailwindcss@4.3.2",
-    "npm:@tailwindcss/vite@4.3.2": "4.3.2_vite@7.3.6",
+    "npm:@tailwindcss/vite@4.3.2": "4.3.2_vite@7.3.7",
     "npm:@types/babel__core@^7.20.5": "7.20.5",
     "npm:daisyui@5.7.47": "5.7.47",
     "npm:esbuild-wasm@~0.25.11": "0.25.12",
@@ -84,8 +84,8 @@
     "npm:rollup@^4.55.1": "4.64.0",
     "npm:sanitize-html@^2.17.0": "2.18.0",
     "npm:tailwindcss@4.3.2": "4.3.2",
-    "npm:vite@7.3.6": "7.3.6",
-    "npm:vite@^7.1.4": "7.3.6"
+    "npm:vite@7.3.7": "7.3.7",
+    "npm:vite@^7.1.4": "7.3.7"
   },
   "jsr": {
     "@deno/esbuild-plugin@1.2.1": {
@@ -932,7 +932,7 @@
     "@prefresh/utils@1.2.1": {
       "integrity": "sha512-vq/sIuN5nYfYzvyayXI4C2QkprfNaHUQ9ZX+3xLD8nL3rWyzpxOm1+K7RtMbhd+66QcaISViK7amjnheQ/4WZw=="
     },
-    "@prefresh/vite@2.4.12_preact@10.29.8_vite@7.3.6_preact-render-to-string@6.8.0": {
+    "@prefresh/vite@2.4.12_preact@10.29.8_vite@7.3.7": {
       "integrity": "sha512-FY1fzXpUjiuosznMV0YM7XAOPZjB5FIdWS0W24+XnlxYkt9hNAwwsiKYn+cuTEoMtD/ZVazS5QVssBr9YhpCQA==",
       "dependencies": [
         "@babel/core",
@@ -1174,7 +1174,7 @@
         "tailwindcss"
       ]
     },
-    "@tailwindcss/vite@4.3.2_vite@7.3.6": {
+    "@tailwindcss/vite@4.3.2_vite@7.3.7": {
       "integrity": "sha512-eHpMeX4JXfVNJDEcsouTeCBubJBTcTLigeaw/NTUW6PB5ATKKXdyonnXgTBX2VuRbjz1hjfz6C5XAhr52ImQXA==",
       "dependencies": [
         "@tailwindcss/node",
@@ -1722,8 +1722,8 @@
     "util-deprecate@1.0.2": {
       "integrity": "sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw=="
     },
-    "vite@7.3.6": {
-      "integrity": "sha512-4XP60spRGjSZFf1qYH+dJIkK2znL3zQfl9KkOV9MkkRR/3Dls0dxaBsQPTloEc5BLXWPL9vsOxopxyKoMmDueg==",
+    "vite@7.3.7": {
+      "integrity": "sha512-AHEzTORMbi7/7aXp7w7KZ5+DCUdSeLsJz0grY8xHpc9DHdYb0vQu6DqJfm2tOw3gDExNgPgnJTXxM6syYFHaCA==",
       "dependencies": [
         "esbuild@0.28.2",
         "fdir",
@@ -1759,7 +1759,7 @@
       "npm:daisyui@5.7.47",
       "npm:preact@10.29.8",
       "npm:tailwindcss@4.3.2",
-      "npm:vite@7.3.6"
+      "npm:vite@7.3.7"
     ]
   }
 }
